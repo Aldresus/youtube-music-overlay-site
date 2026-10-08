@@ -18,9 +18,9 @@
 <body><main>
   <h1>YouTube Music Overlay</h1>
   <p>A compact, always-on-top Windows player for music playing in your YouTube Music browser tab.</p>
-  <p><a class="download" href="https://github.com/Aldresus/youtube-music-overlay-site/releases/download/v0.1.1/YouTubeMusicOverlay-0.1.1-windows-x64.zip">Download for Windows x64</a></p>
-  <p class="note">Version 0.1.1 · Preview · Portable ZIP · Unsigned executable</p>
-  <p><a href="https://github.com/Aldresus/youtube-music-overlay-site/releases/tag/v0.1.1">Release notes and SHA-256 checksum</a></p>
+  <p><a class="download" href="https://github.com/Aldresus/youtube-music-overlay-site/releases/download/v0.1.2/YouTubeMusicOverlay-0.1.2-windows-x64.zip">Download for Windows x64</a></p>
+  <p class="note">Version 0.1.2 · Preview · Portable ZIP · Unsigned executable</p>
+  <p><a href="https://github.com/Aldresus/youtube-music-overlay-site/releases/tag/v0.1.2">Release notes and SHA-256 checksum</a></p>
   <h2>Set up once</h2>
   <ol>
     <li>Download the ZIP, extract the entire folder, and open <code>YouTubeMusicOverlay/YouTubeMusicOverlay.exe</code>. Keep all files together.</li>
@@ -28,12 +28,12 @@
     <li>Until then, load the included <code>companion</code> folder as an unpacked extension through your browser's extensions page in Developer mode. Chrome and Edge are supported.</li>
     <li>Right-click the overlay and open Settings. Copy the <strong>Browser pairing code</strong>. Open the extension popup, paste the code, and press <strong>Pair browser</strong>.</li>
     <li>Open or reload <a href="https://music.youtube.com/">music.youtube.com</a>, sign in with your own account, and play a song. Keep the tab open.</li>
-    <li>Choose an editable target playlist in the desktop app's Settings and press Done.</li>
+    <li>Press Done to return to the compact player.</li>
   </ol>
   <h2>Daily use</h2>
-  <p>Drag the background to move the overlay. Use previous/next to change songs, and click or drag the bottom progress bar to seek. Click Add to save the current song; click Added to remove it. The default global shortcut, <strong>Ctrl+Alt+Y</strong>, only adds songs and can be changed in Settings.</p>
+  <p>Drag the background to move the overlay. Use previous/next to change songs, and click or drag the bottom progress bar to seek. The 320 × 100 pixel player follows your device’s light or dark appearance. Playlist saving and its global shortcut have been removed.</p>
   <p>Both the app and browser must run on the same computer. This version supports web playback; it does not control playback on your phone.</p>
-  <p class="note">Current-song reading and editable playlist discovery have been verified with a signed-in account. Add/remove and playback controls passed integration checks with a test player; real-account playlist edits still need verification. YouTube Music website changes may require companion updates.</p>
+  <p class="note">Current-song reading has been verified with a signed-in account. Pairing, previous/next, seeking, themes and disconnect are checked with a test player. The companion does not read Google authentication cookies or call playlist/account APIs.</p>
   <footer><a href="./">Privacy policy</a> · Independent companion, not affiliated with or endorsed by Google or YouTube.</footer>
 </main></body>
 </html>

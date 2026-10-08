@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Download YouTube Music Overlay for Windows and pair it with the browser companion.">
+  <title>YouTube Music Overlay — Download and setup</title>
+  <style>
+    :root{color-scheme:light dark;--bg:#f8fbff;--fg:#102a43;--muted:#476785;--accent:#0f6abc}
+    @media(prefers-color-scheme:dark){:root{--bg:#0b1420;--fg:#edf5ff;--muted:#adc4dd;--accent:#4a9cf5}}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.7 system-ui,sans-serif}
+    main{max-width:820px;margin:auto;padding:48px 24px 72px}h1{font-size:clamp(28px,5vw,40px);line-height:1.2;letter-spacing:-.025em}
+    h2{font-size:24px;line-height:1.3;margin-top:38px}a{color:var(--accent);text-underline-offset:3px}
+    .download{display:inline-block;background:#0f6abc;color:white;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:600}
+    a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.note,footer{color:var(--muted);font-size:15px}li{margin-bottom:12px}code{overflow-wrap:anywhere}
+  </style>
+</head>
+<body><main>
+  <h1>YouTube Music Overlay</h1>
+  <p>A compact, always-on-top Windows player for music playing in your YouTube Music browser tab.</p>
+  <p><a class="download" href="https://github.com/Aldresus/youtube-music-overlay-site/releases/download/v0.1.0/YouTubeMusicOverlay-0.1.0-windows-x64.zip">Download for Windows x64</a></p>
+  <p class="note">Version 0.1.0 · Preview · Portable ZIP · Unsigned executable</p>
+  <p><a href="https://github.com/Aldresus/youtube-music-overlay-site/releases/tag/v0.1.0">Release notes and SHA-256 checksum</a></p>
+  <h2>Set up once</h2>
+  <ol>
+    <li>Download the ZIP, extract the entire folder, and open <code>YouTubeMusicOverlay/YouTubeMusicOverlay.exe</code>. Keep all files together.</li>
+    <li>Install <a href="https://chromewebstore.google.com/detail/nkpbkjfpgdockdobgfbjalflgldkepaa">YouTube Music Overlay Companion</a> when its Store listing becomes available. The extension has not yet been published.</li>
+    <li>Until then, load the included <code>companion</code> folder as an unpacked extension through your browser's extensions page in Developer mode. Chrome and Edge are supported.</li>
+    <li>Right-click the overlay and open Settings. Copy the <strong>Browser pairing code</strong>. Open the extension popup, paste the code, and press <strong>Pair browser</strong>.</li>
+    <li>Open or reload <a href="https://music.youtube.com/">music.youtube.com</a>, sign in with your own account, and play a song. Keep the tab open.</li>
+    <li>Choose an editable target playlist in the desktop app's Settings and press Done.</li>
+  </ol>
+  <h2>Daily use</h2>
+  <p>Drag the background to move the overlay. Use previous/next to change songs, and click or drag the bottom progress bar to seek. Click Add to save the current song; click Added to remove it. The default global shortcut, <strong>Ctrl+Alt+Y</strong>, only adds songs and can be changed in Settings.</p>
+  <p>Both the app and browser must run on the same computer. This version supports web playback; it does not control playback on your phone.</p>
+  <p class="note">The desktop and browser integration has been checked with demonstration data. Real-account playback and playlist operations still need verification. YouTube Music website changes may require companion updates.</p>
+  <footer><a href="./">Privacy policy</a> · Independent companion, not affiliated with or endorsed by Google or YouTube.</footer>
+</main></body>
+</html>
